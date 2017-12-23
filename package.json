@@ -1,0 +1,29 @@
+{
+  "name": "preact-prism",
+  "version": "0.0.1",
+  "main": "dist/preact-prism.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "npm run -s transpile && npm run -s minify && npm run -s size",
+    "transpile": "rollup -c rollup.config.js",
+    "minify": "uglifyjs $npm_package_main -cm -o $npm_package_main --source-map filename=${npm_package_main}.map",
+    "size": "echo \"gzip size: $(gzip-size $npm_package_main)\""
+  },
+  "dependencies": {
+    "preact-html": "^2.0.2",
+    "prismjs": "^1.9.0"
+  },
+  "peerDependencies": {
+    "preact": "^8.2.7"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "^1.6.1",
+    "gzip-size-cli": "^2.1.0",
+    "rollup": "^0.52.3",
+    "rollup-plugin-babel": "^3.0.3",
+    "uglify-js": "^3.2.2"
+  }
+}
