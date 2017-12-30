@@ -1,5 +1,4 @@
-# preact-prism
-[![npm version](https://img.shields.io/npm/v/preact-prism.svg?style=flat)](https://www.npmjs.com/package/preact-prism)
+# preact-prism [![npm version](https://img.shields.io/npm/v/preact-prism.svg?style=flat)](https://www.npmjs.com/package/preact-prism)
 use [Prism](http://prismjs.com) syntax highlighter in preact projects.
 ## Install
 
