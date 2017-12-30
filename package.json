@@ -1,14 +1,21 @@
 {
   "name": "preact-prism",
-  "version": "0.0.1",
+  "version": "0.0.2",
+  "description": "Preact syntax highlighting component using prism",
   "main": "dist/preact-prism.js",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ShredderMing/preact-prism"
+  },
   "scripts": {
     "build": "npm run -s transpile && npm run -s minify && npm run -s size",
     "transpile": "rollup -c rollup.config.js",
-    "minify": "uglifyjs $npm_package_main -cm -o $npm_package_main --source-map filename=${npm_package_main}.map",
+    "minify":
+      "uglifyjs $npm_package_main -cm -o $npm_package_main --source-map filename=${npm_package_main}.map",
     "size": "echo \"gzip size: $(gzip-size $npm_package_main)\""
   },
+  "keywords": ["preact", "prism", "preact-components", "highlight"],
   "dependencies": {
     "preact-html": "^2.0.2",
     "prismjs": "^1.9.0"
