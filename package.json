@@ -1,6 +1,6 @@
 {
   "name": "preact-prism",
-  "version": "0.0.2",
+  "version": "0.1.2",
   "description": "Preact syntax highlighting component using prism",
   "main": "dist/preact-prism.js",
   "license": "MIT",
