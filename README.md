@@ -31,5 +31,6 @@ const code = `
 `;
 
 render(<Code code={code} language="css" />, document.body);
+// or render(<Code language="css">{code}</Code>, document.body);
 ```
 
